@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="cat-name-1"> 
+</div>
+<div id="numberofclicks1">
+	</div>
+<div id="my-elem1">
+<img src="images/cat1.jpg" width="640" height="426" alt=""/>
+	</div>
+	<div id="cat-name-2">
+	</div>
+	<div id="numberofclicks2">
+	</div>
+	<div id="my-elem2">
+    <img src="images/cat2.jpg" width="640" height="496" alt=""/> 
+    </div>
+</body>
+	<script>
+		var catOneName = document.getElementById('cat-name-1');
+		catOneName.innerHTML = "Tiger";
+		
+		var numberOfClicksOne = document.getElementById('numberofclicks1');
+
+		
+	var catPictureOne = document.getElementById('my-elem1');
+	var i = 0;
+	catPictureOne.addEventListener('click', function(){
+    catPictureOne.value = ++i;
+		numberOfClicksOne.innerHTML = catPictureOne.value;
+	console.log("i");
+	}, false);
+		
+		var catTwoName = document.getElementById('cat-name-2');
+		catTwoName.innerHTML = "Snow";
+		
+		var numberOfClicksTwo = document.getElementById('numberofclicks2');
+		
+	var catPictureTwo = document.getElementById('my-elem2');
+	var t = 0;
+	catPictureTwo.addEventListener('click', function(){
+    catPictureTwo.value = ++t;
+		numberOfClicksTwo.innerHTML = catPictureTwo.value;
+	console.log("t");
+	}, false);	
+	</script>
+</html>
